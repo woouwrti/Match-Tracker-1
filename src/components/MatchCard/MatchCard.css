@@ -1,0 +1,172 @@
+.MainBox {
+  background-color: #0b0e12;
+
+  transition: max-height 300ms;
+
+  display: flex;
+  flex-direction: column;
+
+  max-height: 87px;
+  border-radius: 4px;
+  color: white;
+
+  overflow: hidden;
+}
+
+.MainBox-dropped {
+  max-height: 255px;
+}
+
+.DropdownButton {
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 300ms;
+}
+
+.DropdownButton-dropped {
+  transform: rotate(-180deg);
+}
+
+.TopBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 55px;
+  justify-content: space-between;
+  gap: 8px;
+
+  margin: 16px;
+}
+
+.TopInfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.TeamBoxRight {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+.TeamBoxLeft {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.TeamIconBox {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.CommandText {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.36px;
+  letter-spacing: 0%;
+
+  align-self: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.ScoreBox {
+  min-width: 92px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 9px;
+}
+
+.ScoreText {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.StatusText {
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+
+  text-align: center;
+}
+
+.MatchStatusBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* min-width: 92px; */
+  height: 27px;
+  border-radius: 4px;
+
+  background-color: red;
+
+  padding: 0px 10px;
+}
+
+.MatchStatusBoxScheduled {
+  background-color: #eb6402;
+}
+
+.MatchStatusBoxOngoing {
+  background-color: #43ad28;
+}
+
+.MatchStatusBoxFinished {
+  background-color: #eb0237;
+}
+
+.BottomBox {
+  max-height: 0px;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: max-height 300ms;
+
+  padding: 16px;
+}
+
+.BottomBox-dropped {
+  max-height: 136px;
+}
+
+.CommonText {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.CommonTextDark {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #fafafa66;
+}

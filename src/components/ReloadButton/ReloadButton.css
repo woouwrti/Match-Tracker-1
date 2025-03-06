@@ -1,0 +1,52 @@
+.ReloadButton {
+  width: 100%;
+  max-width: 204px;
+  height: 56px;
+  border-radius: 4px;
+  border: none;
+  background-color: #eb0237;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+}
+
+.ReloadButton:hover {
+  background-color: #a01131;
+}
+
+.ReloadButton:disabled {
+  background-color: #a01131;
+}
+
+.Icon {
+  height: 26px;
+  width: 26px;
+}
+
+.Icon-spin {
+  transition: transform 0.3s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Icon-spin {
+    animation: spin infinite 1s linear;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
